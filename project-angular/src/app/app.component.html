@@ -1,11 +1,18 @@
-<h1>Jobs API </h1>
-<ul>
-  <li><a routerLink="home">Home</a></li>
-  <li><a routerLink="jobs">Jobs</a></li>
-  <li><a routerLink="create">Create New Jobs</a></li>
 
-</ul>
+  <header>
+      <ul>
+        <li><a [routerLink]="['/home']" [routerLinkActive]="['actived']">Home</a></li>
+        <li><a [routerLink]="['/jobs']" [routerLinkActive]="['actived']">Jobs</a></li>
+        <li><a [routerLink]="['/create']" [routerLinkActive]="['actived']">Create</a></li>
+       
 
+      </ul>
+  </header>
 
+  <section id="content">
+      <router-outlet></router-outlet>
+  </section>
 
-<router-outlet></router-outlet>
+  <footer>
+     Jose Miguel &Copy -2020
+  </footer>
