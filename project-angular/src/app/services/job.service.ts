@@ -41,4 +41,10 @@ export class JobService{
         return this._http.delete(this.url+'job/'+id,{headers:headers});
     }
 
+    updateJob(job):Observable<any>{
+        let params = JSON.stringify(job);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.put(this.url+'job/'+job._id, params ,{headers:headers});
+    }
+
 }

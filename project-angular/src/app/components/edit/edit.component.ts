@@ -3,21 +3,27 @@ import {Job} from '../../models/job';
 import {JobService} from '../../services/job.service';
 import {Global} from '../../services/global';
 import {Router,ActivatedRoute,Params} from '@angular/router'
+
 @Component({
-  selector: 'app-detail',
-  templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css'],
+  selector: 'app-edit',
+  templateUrl: '../create/create.component.html',
+  styleUrls: ['./edit.component.css'],
   providers: [JobService]
 })
-export class DetailComponent implements OnInit {
+export class EditComponent implements OnInit {
+  public name: string;
+  public job: Job;
+  public status: string;
   public url:string;
-  public job:Job;
+  
   constructor(
     private _jobService: JobService,
     private _router:Router,
     private _route:ActivatedRoute
   ) { 
-    this.url=Global.url;
+    this.name = "Update Job";
+    this.url = Global.url;
+    
   }
 
   ngOnInit(): void {
@@ -39,19 +45,23 @@ export class DetailComponent implements OnInit {
     );
   }
 
-  deleteJob(id){
-    this._jobService.deleteJob(id).subscribe(
-      response =>{
-        if(response.job){
-          this._router.navigate(['/job']);
+  onSumbit(form){
+    console.log(this.job);
+    this._jobService.updateJob(this.job).subscribe(
+      response => {
+        if (response.job){
+
+          this.status='success';
+          form.reset();
+          
+        }
+        else{
+          this.status='failed';
         }
       },
       error => {
         console.log(<any>error);
       }
-      
     );
-
-  }
-
+}
 }

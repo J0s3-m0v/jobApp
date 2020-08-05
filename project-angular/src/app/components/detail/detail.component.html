@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="job">
   <h2>Title: {{job.title}}</h2>
     <div class="data">
         <p>Description: {{job.description}}</p>
@@ -6,7 +6,7 @@
         <p>Location: {{job.location}}</p>
     
         <p>
-            <a href="#" class="button-edit">Update</a>
+            <a [routerLink]="['/edit',job._id]" class="button-edit">Update</a>
             <a (click)="deleteJob(job._id)" class="button-delete">Delete</a>
 
         </p>
