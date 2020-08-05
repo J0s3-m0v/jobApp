@@ -31,6 +31,10 @@ export class JobService{
         return this._http.get(this.url+'jobs',{headers:headers});
     }
    
+    getJob(id):Observable<any>{
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+    
+        return this._http.get(this.url+'job/'+id,{headers:headers});
 
-
+    }
 }

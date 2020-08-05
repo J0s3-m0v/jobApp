@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Job} from '../../models/job';
 import {JobService} from '../../services/job.service';
 import {Global} from '../../services/global';
-  import { from } from 'rxjs';
+//import { from } from 'rxjs';
 
 @Component({
   selector: 'app-jobs',
@@ -12,7 +12,10 @@ import {Global} from '../../services/global';
 })
 export class JobsComponent implements OnInit {
   public jobs: Job[];
-  constructor(private _jobService: JobService) { }
+  public url:string
+  constructor(private _jobService: JobService) {
+    this.url=Global.url;
+   }
 
   ngOnInit(): void {
     this.getJobs();

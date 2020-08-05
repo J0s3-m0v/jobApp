@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Job} from '../../models/job';
 import {JobService} from '../../services/job.service';
+import {Global} from '../../services/global';
 
 @Component({
   selector: 'app-create',
@@ -29,7 +30,10 @@ export class CreateComponent implements OnInit {
       this._jobService.saveJob(this.job).subscribe(
         response => {
           if (response.job){
+
             this.status='success';
+            form.reset();
+            
           }
           else{
             this.status='failed';

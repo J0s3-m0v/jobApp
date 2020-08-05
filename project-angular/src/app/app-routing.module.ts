@@ -3,11 +3,10 @@ import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
 import {FormsModule} from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
-//import {AppComponent} from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CreateComponent } from './components/create/create.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 const routes: Routes = [
@@ -23,6 +22,10 @@ const routes: Routes = [
   {
     path:'create',
     component:CreateComponent
+  },
+  {
+    path:'job/:id',
+    component:DetailComponent
   }
 ];
 

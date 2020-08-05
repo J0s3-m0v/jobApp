@@ -224,3 +224,18 @@ form input[disabled]{
 	color: white;
 }
 
+/*Job*/
+
+.job{
+	width:70%; 
+    margin-left:15%; 
+	margin-right:15%;
+	text-align: center;
+	font-size: 22px;
+	padding: 10px;
+}
+
+.job a{
+	text-decoration: none;
+	color: black;
+}
