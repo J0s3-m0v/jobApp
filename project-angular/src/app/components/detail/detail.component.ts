@@ -36,7 +36,22 @@ export class DetailComponent implements OnInit {
         console.log(<any>error);
       }
       
-    )
+    );
+  }
+
+  deleteJob(id){
+    this._jobService.deleteJob(id).subscribe(
+      response =>{
+        if(response.job){
+          this._router.navigate(['/jobs']);
+        }
+      },
+      error => {
+        console.log(<any>error);
+      }
+      
+    );
+
   }
 
 }

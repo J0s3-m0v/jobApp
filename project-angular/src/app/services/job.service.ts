@@ -33,8 +33,12 @@ export class JobService{
    
     getJob(id):Observable<any>{
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
-    
         return this._http.get(this.url+'job/'+id,{headers:headers});
-
     }
+
+    deleteJob(id):Observable<any>{
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.delete(this.url+'job/'+id,{headers:headers});
+    }
+
 }

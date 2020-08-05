@@ -1,0 +1,59 @@
+[33mcommit 17e0e505f15052dcc60e528956194c708bc11e6b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Wed Aug 5 21:30:14 2020 +0100
+
+    componet detail Job
+
+[33mcommit 7d05899c9b57c27bc4235a1d8c303a557c965ec7[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Wed Aug 5 17:46:31 2020 +0100
+
+    list all jobs
+
+[33mcommit ae57309775136676e8e90efae65d60dbe90c6884[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Wed Aug 5 15:00:17 2020 +0100
+
+    components create new job
+
+[33mcommit 0045433ec41aba42da4f5a53f5e17c8f0ca47f4f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Wed Aug 5 00:02:01 2020 +0100
+
+    add style on site and update Home page
+
+[33mcommit f2fd5cb621e53b33e919e6a53b2203627c851ca3[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Tue Aug 4 21:45:31 2020 +0100
+
+    create routing
+
+[33mcommit 19d54304cf28804c501fb5702b6726ead885d952[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Tue Aug 4 20:19:05 2020 +0100
+
+    Install Angular - FrontEnd
+
+[33mcommit 9cf0e1d41400f7f3623ee9c3f30b6e3c52346df9[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Mon Jul 27 18:53:21 2020 +0100
+
+    routes backend
+
+[33mcommit 950dc1a8625dd8dac221f1f1e7d60ed813a809ad[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Mon Jul 27 18:27:31 2020 +0100
+
+    create controllers and models backend
+
+[33mcommit 16921e88afb2ea7dc3c3d5799038500f78a70b52[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Mon Jul 27 18:24:57 2020 +0100
+
+    install lib and config
+
+[33mcommit e2e2fd62f7aba089e1537ea99bf9f387d7d7587b[m
+Author: J0s3-m0v <j0s3.m0v@outlook.es>
+Date:   Mon Jul 27 18:14:07 2020 +0100
+
+    Start backend
