@@ -8,7 +8,7 @@ router.get('/home', JobController.home);
 
 router.post('/test', JobController.test);
 
-router.post('/saveJob', JobController.saveJob);
+router.post('/savejob', JobController.saveJob);
 
 router.get('/job/:id?', JobController.getJob);
 
