@@ -26,6 +26,10 @@ export class JobService{
             return this._http.post(this.url+'savejob',params,{headers:headers});
     }
 
+    getJobs(): Observable<any>{
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.get(this.url+'jobs',{headers:headers});
+    }
    
 
 

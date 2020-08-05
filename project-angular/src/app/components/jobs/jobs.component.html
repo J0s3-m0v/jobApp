@@ -1,1 +1,22 @@
-<p>jobs works!</p>
+<div class="container">
+    <h2>Jobs</h2>
+
+    <table>
+        
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Keywords</th>
+          <th>Location</th>
+        </tr>
+        <tr *ngFor="let job of jobs">
+          <td>{{job.title}}</td>
+          <td>{{job.description}}</td>
+          <td>{{job.keywords}}</td>
+          <td>{{job.location}}</td>
+        </tr>
+        
+      </table>
+      <br>
+    
+</div>
