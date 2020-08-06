@@ -14,6 +14,8 @@ var controller = {
         });
     },
 
+    // Fuction to save a new Job
+
     saveJob: function(req, res){
        var job = new Job();
 
@@ -34,6 +36,8 @@ var controller = {
         });   
     },
 
+    // function te return a specific job. 
+
     getJob: function(req, res){
         var jobId = req.params.id;
      
@@ -50,6 +54,8 @@ var controller = {
         });
     }, 
 
+    // function that return all Job that are register at the DataBase
+
     getJobs: function(req, res){
 
         job.find({}).exec((err,jobs) => 
@@ -63,6 +69,8 @@ var controller = {
             
         });
     },
+
+    // Function to upate a job 
 
     updateJob: function(req, res){
         var jobId = req.params.id;
@@ -79,6 +87,8 @@ var controller = {
         });
     },
 
+    // function that delete or remove from the database
+    
     removeJob: function(req, res){
         var jobId = req.params.id;
     

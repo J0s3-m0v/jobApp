@@ -10,6 +10,8 @@ import {Router,ActivatedRoute,Params} from '@angular/router'
   styleUrls: ['./edit.component.css'],
   providers: [JobService]
 })
+// This class is to implement the update a job existed 
+
 export class EditComponent implements OnInit {
   public name: string;
   public job: Job;

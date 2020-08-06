@@ -10,6 +10,9 @@ import {Global} from '../../services/global';
   styleUrls: ['./jobs.component.css'],
   providers: [JobService]
 })
+
+// This class is to have all jobs 
+
 export class JobsComponent implements OnInit {
   public jobs: Job[];
   public url:string

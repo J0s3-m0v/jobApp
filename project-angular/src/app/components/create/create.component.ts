@@ -10,12 +10,14 @@ import {Global} from '../../services/global';
   providers: [JobService]
 })
 
+// Define the class create. 
 export class CreateComponent implements OnInit {
 
   public name: string;
   public job: Job;
   public status: string;
 
+  // contructor when create a new job
   constructor(private _jobService: JobService) {
       this.name = "Create a New Job";
       this.job = new Job('','','','','');

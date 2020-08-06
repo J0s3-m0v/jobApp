@@ -9,9 +9,8 @@ import { CreateComponent } from './components/create/create.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
 
-
-const routes: Routes = [
-  
+// here define the routes that the users could have access from the browser
+const routes: Routes = [  
   {
     path:'home',
     component:HomeComponent

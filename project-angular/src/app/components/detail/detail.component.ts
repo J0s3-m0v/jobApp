@@ -9,9 +9,13 @@ import {Router,ActivatedRoute,Params} from '@angular/router'
   styleUrls: ['./detail.component.css'],
   providers: [JobService]
 })
+
+// Develope a class detail, here could implements to have the detail of a job
 export class DetailComponent implements OnInit {
+  
   public url:string;
   public job:Job;
+
   constructor(
     private _jobService: JobService,
     private _router:Router,

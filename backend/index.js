@@ -3,6 +3,8 @@ var mongoose = require('mongoose');
 var app = require('./app');
 var port =3700;
 
+// here made the connection with the data base
+
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/jobDB')
 .then(()=>{

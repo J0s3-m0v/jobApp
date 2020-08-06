@@ -4,6 +4,8 @@ var JobController = require('../controllers/job');
 
 var router = express.Router();
 
+//  here is decalred the routers
+
 router.get('/home', JobController.home);
 
 router.post('/test', JobController.test);

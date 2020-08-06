@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+// Jere define the elements that will have the homepage
 
   public title: string;
   public subtitle: string;
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
     this.title="APP To search Jobs";
 
     this.subtitle = "Student at CCT College";
-    this.autor = "by Jose Miguel ";
+    this.autor = "by Jose Miguel Gonzales  ";
    }
 
   ngOnInit(): void {
